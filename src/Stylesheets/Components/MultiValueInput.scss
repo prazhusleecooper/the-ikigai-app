@@ -1,0 +1,18 @@
+@import '../Global.scss';
+
+.multi-value-input-pill {
+    @include value-pill;
+    
+    span { 
+        max-width: calc(50vw/2);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .close-btn {
+        border: none;
+        outline: none;
+        background-color: #F0F0F0;
+    }
+}

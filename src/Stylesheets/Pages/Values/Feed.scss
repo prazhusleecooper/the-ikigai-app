@@ -1,0 +1,219 @@
+@import '../../Global.scss';
+
+.dashboard-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+
+    .dashboard-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        
+        span {
+            font-size: 22px;
+            color: $primary-purple;
+            font-weight: 500;
+        }
+
+        .buttons-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 10px;
+            
+            button {
+                @include button
+            }
+        }
+
+        .prompt-text {
+            font-size: 16px;
+        }
+
+    }
+
+    .feed-list-section {
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+        grid-gap: 20px;
+
+        .feed-card {
+            border: 2px solid $primary-purple;
+            @include box-shadow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 20px;
+            padding: 20px 40px;
+            width: 20%;
+            border-radius: 5px;;
+
+            button {
+                @include button;
+            }
+        }   
+    }
+    
+    .ikigai-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .ikigai-inner-section {
+            width: 50%;
+            height: 450px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+            .section-heading {
+                font-size: 21px;
+            }
+
+            .input-form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                grid-gap: 10px;
+                max-width: 450px;
+                margin: 0 0 25px;
+
+                .value-input {
+                    @include input;
+                    background-color: $primary-white;
+                }
+        
+                .value-form-submit-btn {
+                    @include button;
+                }
+
+            }
+
+            .values-section {
+                width: 100%;
+                overflow-y: auto;
+                flex-grow: 1;
+
+                .value-blocks-section {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    grid-gap: 10px;
+                }
+
+            }
+
+        }
+
+        .what-you-love {
+            background-color: rgba(254, 241, 171, 0.5);
+            border: 5px solid #FEF1AB;
+        }
+        
+        .what-the-world-needs {
+            background-color: rgba(254, 164, 190, 0.5);
+            border: 5px solid #FEA4BE;
+        }
+        
+        .what-you-can-be-paid-for {
+            background-color: rgba(203, 210, 232, 0.5);
+            border: 5px solid #CBD2E8;
+        }
+        
+        .what-you-are-good-at {
+            background-color: rgba(207, 249, 158, 0.5);
+            border: 5px solid #CFF99E;
+        }
+
+    }
+    
+    .dashboard-footer {
+        // height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+
+        button {
+            @include button;
+        }
+
+    }
+
+    .analysis-section {
+
+        .header-text {
+            font-size: 22px;
+            color: $primary-purple;
+            padding: 10px;
+
+        }
+
+        .analysis-section {
+            margin: 10px;
+            border-radius: 5px;
+            padding: 10px;
+
+            .values-section {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                grid-gap: 10px;
+
+                .value-pill {
+                    @include value-pill;
+                    padding: 2.5px 6px;
+                }
+
+            }
+        }
+
+        .passion-section {
+            background-color: rgb(236,246,142);
+            border: 2px solid rgb(201, 207, 136);
+        }
+
+        .mission-section {
+            background-color: rgb(255,210,160);
+            border: 2px solid rgb(172, 142, 108);
+        }
+
+        .vocation-section {
+            background-color: rgb(198,165,222);
+            border: 2px solid rgb(150, 124, 168);
+        }
+
+        .profession-section {
+            background-color: rgb(162,221,203);
+            border: 2px solid rgb(120, 163, 150);
+        }
+
+    }
+}

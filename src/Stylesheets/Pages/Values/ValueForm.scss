@@ -1,0 +1,68 @@
+@import '../../Global.scss';
+
+
+.value-form-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title-text {
+        font-size: 35px;
+        color: $primary-purple;
+        font-weight: 600;
+    }
+
+    .prompt-text {
+        text-align: center;
+        max-width: 450px;
+    }
+
+    .value-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 10px;
+        max-width: 450px;
+        margin: 0 0 25px;
+
+        .value-form-input {
+            @include input
+        }
+
+        .value-form-submit-btn {
+            @include button;
+        }
+
+    }
+
+    .value-blocks-section {
+        max-width: 450px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-gap: 10px;
+    }
+
+    .proceed-btn {
+        margin: 20px 0;
+        @include button;
+    }
+
+    .proceed-error-section {
+        max-width: 450px;
+        margin: 15px 0 0;
+        height: 20px;
+
+        .proceed-error-text {
+            color: $error;
+        }
+    }
+
+}

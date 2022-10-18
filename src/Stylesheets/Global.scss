@@ -1,0 +1,56 @@
+// GLOBAL STYLING
+* {
+    font-family: 'Inter'
+}
+
+// ? COLORS
+$primary-purple: #9B239B;
+$primary-white: #FFFFFF;
+
+$input-grey: #EDEDED    ;
+$button-text: #FFFFFF;
+$error: #FF0000;
+
+// ? Fonts
+// * INTER
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+// ? Mixin Stylings
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 0px 23px 3px rgba(189,189,189,0.8);
+    -moz-box-shadow: 0px 0px 23px 3px rgba(189,189,189,0.8);
+    box-shadow: 0px 0px 23px 3px rgba(189,189,189,0.8);
+}
+
+// * FORM COMPONENTS
+@mixin input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: $input-grey;
+    padding: 7.5px 10px;
+}
+
+@mixin button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: $primary-purple;
+    padding: 7.5px 10px;
+    color: $button-text;
+    font-weight: 5  00;
+}   
+
+// * MULTI VALUE INPUT PILL
+@mixin value-pill {
+    width: fit-content;
+    background-color: #F0F0F0;
+    color: #000000;
+    padding: 2.5px 0 2.5px 6px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 5px;
+}
