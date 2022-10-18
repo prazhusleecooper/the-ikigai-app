@@ -102,7 +102,7 @@ const Dashboard = () => {
                 return(
                     <Draggable
                         key={index.toString()}
-                        draggableId={index.toString() + value}
+                        draggableId={index.toString() + '_' + value + '_WYL'}
                         index={index}
                     >
                         
@@ -216,7 +216,7 @@ const Dashboard = () => {
                 return(
                     <Draggable
                         key={index.toString()}
-                        draggableId={index.toString() + value}
+                        draggableId={index.toString() + '_' + value + '_WTWN'}
                         index={index}
                     >
                         
@@ -333,7 +333,7 @@ const Dashboard = () => {
 
                     <Draggable
                         key={index.toString()}
-                        draggableId={index.toString() + value}
+                        draggableId={index.toString() + '_' + value + '_WYCBPF'}
                         index={index}
                     >
                         
@@ -448,7 +448,7 @@ const Dashboard = () => {
                 return(
                     <Draggable
                         key={index.toString()}
-                        draggableId={index.toString() + value}
+                        draggableId={index.toString() + '_' + value + '_WYAGA'}
                         index={index}
                     >
                         
